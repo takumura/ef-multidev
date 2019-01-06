@@ -29,14 +29,21 @@ namespace EntityFrameworkMultiDeveloper.Migrations
                 new AccountType { Description = "Other expenses" });
             context.SaveChanges();
 
+            // remove unneccesary account record
+            var list = context.Accounts.Where(x => !x.Date.HasValue).ToList();
+            foreach (var item in list)
+            {
+                context.Accounts.Remove(item);
+            }
+            context.SaveChanges();
 
-            // id for account is auto-increment. So always add new record for each Update-Database.
+            // id for account is auto-increment field. So it always adds new records for each Update-Database.
             context.Accounts.AddOrUpdate(
                 x => x.Id,
-                new Account { AccountTypeId = 1, PaymentAmount = 40000 },
-                new Account { AccountTypeId = 2, PaymentAmount = 30000 },
-                new Account { AccountTypeId = 3, PaymentAmount = 20000 },
-                new Account { AccountTypeId = 4, PaymentAmount = 10000 });
+                new Account { AccountTypeId = 1, PaymentAmount = 40000, Date = new DateTime(2019, 1, 1) },
+                new Account { AccountTypeId = 2, PaymentAmount = 30000, Date = new DateTime(2019, 1, 2) },
+                new Account { AccountTypeId = 3, PaymentAmount = 20000, Date = new DateTime(2019, 1, 3) },
+                new Account { AccountTypeId = 4, PaymentAmount = 10000, Date = new DateTime(2019, 1, 4) });
             context.SaveChanges();
 
         }
