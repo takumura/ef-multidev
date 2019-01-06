@@ -23,10 +23,10 @@ namespace EntityFrameworkMultiDeveloper.Migrations
 
             context.AccountTypes.AddOrUpdate(
                 x => x.Description,
-                new AccountType { Description = "Wage Income" },
-                new AccountType { Description = "Miscellaneous Income" },
-                new AccountType { Description = "Food expenses" },
-                new AccountType { Description = "Other expenses" });
+                new AccountType { Description = "Wage Income", SignId = (int)Sign.Plus },
+                new AccountType { Description = "Miscellaneous Income", SignId = (int)Sign.Plus },
+                new AccountType { Description = "Food expenses", SignId = (int)Sign.Minus },
+                new AccountType { Description = "Other expenses", SignId = (int)Sign.Minus });
             context.SaveChanges();
 
             // remove unneccesary account record

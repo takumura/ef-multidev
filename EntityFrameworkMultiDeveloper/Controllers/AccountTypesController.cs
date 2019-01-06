@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
-using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -47,7 +46,7 @@ namespace EntityFrameworkMultiDeveloper.Controllers
         // 詳細については、https://go.microsoft.com/fwlink/?LinkId=317598 を参照してください。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Description")] AccountType accountType)
+        public ActionResult Create([Bind(Include = "Id,Description,SignId")] AccountType accountType)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +78,7 @@ namespace EntityFrameworkMultiDeveloper.Controllers
         // 詳細については、https://go.microsoft.com/fwlink/?LinkId=317598 を参照してください。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Description")] AccountType accountType)
+        public ActionResult Edit([Bind(Include = "Id,Description,SignId")] AccountType accountType)
         {
             if (ModelState.IsValid)
             {

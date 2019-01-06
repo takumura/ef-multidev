@@ -165,6 +165,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Household_Dev_Introduce_Sign.sdf" />
     <Content Include="App_Data\Household_Dev.sdf" />
     <Content Include="App_Data\Household_Dev_Add_Date.sdf" />
     <Content Include="Content\bootstrap-theme.css" />
