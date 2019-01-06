@@ -154,10 +154,6 @@
     <Compile Include="Migrations\201901051712529_CreateTables.Designer.cs">
       <DependentUpon>201901051712529_CreateTables.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201901060935229_add-date.cs" />
-    <Compile Include="Migrations\201901060935229_add-date.Designer.cs">
-      <DependentUpon>201901060935229_add-date.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AccountType.cs" />
@@ -253,9 +249,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201901051712529_CreateTables.resx">
       <DependentUpon>201901051712529_CreateTables.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901060935229_add-date.resx">
-      <DependentUpon>201901060935229_add-date.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
