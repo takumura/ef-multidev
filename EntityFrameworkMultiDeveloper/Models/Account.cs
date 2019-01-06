@@ -12,6 +12,7 @@ namespace EntityFrameworkMultiDeveloper.Models
         public int Id { get; set; }
         public int AccountTypeId { get; set; }
         public decimal PaymentAmount { get; set; }
+        public DateTime? Date { get; set; }
 
         public virtual AccountType AccountType { get; set; }
     }
