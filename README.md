@@ -15,7 +15,7 @@ create pull request, and merge to master except for migraiton files.
 
 ## Merge database change to master
 
-Create merge-database branch and merge database to master.
+Create merge-database branch, run `Add-Migration AddDate` and `Update-Database`, then merge database to master.
 
 ## Complete Development for introduce-sign
 
@@ -32,4 +32,4 @@ create pull request, and merge to master except for migraiton files
 
 ## Merge database change to master
 
-Create merge-database branch and merge database to master
+Create merge-database2 branch, run `Add-Migration IntroduceSign` and `Update-Database`, then merge database to master.
