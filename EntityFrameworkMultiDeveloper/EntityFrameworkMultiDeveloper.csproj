@@ -158,14 +158,6 @@
     <Compile Include="Migrations\201901061327298_AddDate.Designer.cs">
       <DependentUpon>201901061327298_AddDate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201901061022462_introduce-sign.cs" />
-    <Compile Include="Migrations\201901061022462_introduce-sign.Designer.cs">
-      <DependentUpon>201901061022462_introduce-sign.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901061419100_blank.cs" />
-    <Compile Include="Migrations\201901061419100_blank.Designer.cs">
-      <DependentUpon>201901061419100_blank.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AccountType.cs" />
@@ -265,12 +257,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201901061327298_AddDate.resx">
       <DependentUpon>201901061327298_AddDate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901061022462_introduce-sign.resx">
-      <DependentUpon>201901061022462_introduce-sign.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901061419100_blank.resx">
-      <DependentUpon>201901061419100_blank.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
