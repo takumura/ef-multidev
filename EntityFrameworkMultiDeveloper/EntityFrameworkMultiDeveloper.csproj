@@ -154,6 +154,10 @@
     <Compile Include="Migrations\201901051712529_CreateTables.Designer.cs">
       <DependentUpon>201901051712529_CreateTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901061022462_introduce-sign.cs" />
+    <Compile Include="Migrations\201901061022462_introduce-sign.Designer.cs">
+      <DependentUpon>201901061022462_introduce-sign.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AccountType.cs" />
@@ -161,6 +165,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Household_Dev_Introduce_Sign.sdf" />
     <Content Include="App_Data\Household_Dev.sdf" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -248,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201901051712529_CreateTables.resx">
       <DependentUpon>201901051712529_CreateTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901061022462_introduce-sign.resx">
+      <DependentUpon>201901061022462_introduce-sign.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
